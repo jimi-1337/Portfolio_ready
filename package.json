@@ -2,10 +2,13 @@
   "name": "portfolio_nextjs",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
-    "start": "next start"
+    "start": "next start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "next": "10.2.3",
@@ -17,6 +20,7 @@
   },
   "devDependencies": {
     "@iconify-icons/mdi": "^1.1.16",
-    "@iconify/react": "^1.1.4"
+    "@iconify/react": "^1.1.4",
+    "gh-pages": "^3.2.3"
   }
 }
