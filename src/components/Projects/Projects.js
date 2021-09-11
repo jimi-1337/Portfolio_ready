@@ -20,7 +20,7 @@ import {
 } from "../../styles/GlobalComponents";
 import { projects } from "../../constants/constants";
 
-const prefix = '/Portfolio_ready',
+const prefix = '/Portfolio_ready';
 
 const Projects = () => (
   <Section nopadding id="projects">
