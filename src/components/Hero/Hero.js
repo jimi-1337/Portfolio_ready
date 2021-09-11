@@ -10,14 +10,12 @@ const handleClick = () => {
   document.location.href = "https://www.linkedin.com/in/ayoub-moujane-a787b0160/"
 }
 
-const prefix = '/Portfolio_ready';
-
 const Hero = (props) => (
   <>
     <Section row nopadding>
       <LeftSection>
         <SectionTitle main center>
-          <Me src={ prefix + mine.me} />
+          <Me src={mine.me} />
           <br/>
           Hey, I'm Ayoub <br/>
         </SectionTitle>
