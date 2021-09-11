@@ -26,9 +26,17 @@ jobs:
         node-version: ${{ matrix.node-version }}
       
 
-    - run: npm ci
-    - run: npm run build
+    - name: Installing my packages
+      run: npm ci
+
+    - name: Build my App  
+      run: npm run build
+      env:
+        NEXT_PUBLIC_BASE_PATH: /Portfolio_ready
     - run: npm run export
+      env:
+        NEXT_PUBLIC_BASE_PATH: /Portfolio_ready
+    - run: touch ./out/.nojekyll
     
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@3.5.9
