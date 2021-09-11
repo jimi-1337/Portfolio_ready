@@ -20,6 +20,8 @@ import {
 } from "../../styles/GlobalComponents";
 import { projects } from "../../constants/constants";
 
+const prefix = '/Portfolio_ready',
+
 const Projects = () => (
   <Section nopadding id="projects">
     <SectionDivider />
@@ -29,7 +31,7 @@ const Projects = () => (
         return (
           <BlogCard key={i}>
             <div style={{ minHeight: "70rem" }}>
-                  <Img src={p.image} />
+                  <Img src={prefix + p.image} />
               <TitleContent>
                 <HeaderThree title>{p.title}</HeaderThree>
                 <Hr />
