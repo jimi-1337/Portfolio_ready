@@ -17,7 +17,6 @@ const Hero = (props) => (
     <Section row nopadding>
       <LeftSection>
         <SectionTitle main center>
-          {console.log(prefix)}
           <Me src={prefix + mine.me} />
           <br/>
           Hey, I'm Ayoub <br/>
