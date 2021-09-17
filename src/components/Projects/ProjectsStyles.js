@@ -114,4 +114,8 @@ export const Me = styled.img`
   object-fit: cover;
   overflow: hidden;
   border-radius: 50%;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width:50%;
+    height:50%;
+  }
 `
